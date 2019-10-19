@@ -1,16 +1,15 @@
 n=int(input("Enter an integer:"))
-print("Factors are:")
-i=0
-for i in range(0,n):
-
-    while(i<=n):
-        k=0
-        if(n%i==0):
-            j=1
-            while(j<=i):
-                if(i%j==0):
-                    k=k+1
-                j=j+1
-            if(k==2):
-                print(i)
-        i=i+1
+i=1;
+c=0
+while i <=n:
+    j=1
+    f=0
+    if n%i == 0:
+        while j<=i:
+            if i%j == 0:
+                f+=1
+            j+=1
+        if f == 2:
+            c+=1
+        i+=1
+print (c)
